@@ -25,9 +25,11 @@ This simulation proves that numerically.
 ## Physics
 
 Maxwell's curl equations in 2D:
-*`∂Ez/∂t = (∂Hy/∂x - ∂Hx/∂y) / ε`
-*`∂Hx/∂t = -∂Ez/∂y / μ`
-*`∂Hy/∂t = ∂Ez/∂x / μ`
+`∂Ez/∂t = (∂Hy/∂x - ∂Hx/∂y) / ε`
+
+`∂Hx/∂t = -∂Ez/∂y / μ`
+
+`∂Hy/∂t = ∂Ez/∂x / μ`
 
 These are discretized on a 2D grid using the FDTD leapfrog scheme H updates from E, then E updates from H, alternating every timestep. This is the standard method used in real RF and photonics research.
 
